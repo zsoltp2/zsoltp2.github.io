@@ -226,25 +226,36 @@ table {
     transform: translate(-50%);
 }
 
-.socials-images img {
-    height: 60px;
-    background-color: none;
-}
-
-.socials-images li {
+.socials-images {
     display: flex;
-    justify-content: space-evenly;
-    font-size: large;
+    justify-content: center;
+    align-items: center;
 }
 
-.socials-images p {
-    font-family: 'Space Mono', monospace;
-    font-size: larger;
+.socials-images ul {
+    position: relative;
+    display: flex;
+}
+
+.socials-images ul li {
+    position: relative;
+    list-style: none;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.socials-images ul li a {
+    text-decoration: none;
+}
+
+.socials-images ul li a .fa-brands {
+    font-size: 6em;
+    color: white;
 }
 
 .hidden {
     opacity: 0;
-    transition: all 1s;
+    transition: 2s all ease;
 }
 
 .show {
